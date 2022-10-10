@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap");
+:root {
+  --clr-gray-900: #17191c;
+  --clr-gray-800: #14132a;
+  --clr-gray-700: #4f4b68;
+  --clr-gray-600: #6e7191;
+  --clr-gray-500: #a2a5be;
+  --clr-gray-400: #d8dae8;
+  --clr-gray-300: #eeeff6;
+  --clr-gray-200: #f8f8fc;
+  --clr-article-bg: rgba(0, 29, 245, 0.03);
+  --clr-off-white: #fcfcfc;
+  --clr-white: #fff;
+  --clr-primary: #001df5;
+  --clr-secondary: #1e2662;
+  --clr-error: #ed2c7c;
+  --clr-success: #00b887;
+  --font-size: 100%;
+  --font-heading: "Lato", sans-serif;
+  --font-paragraph: "Nunito", sans-serif;
+  --font-button: "Poppins", sans-serif;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-paragraph);
+}
+h1 {
+  text-transform: capitalize;
+}
+h2 {
+  font-size: clamp(1.5rem, 2.4vw + 0.9rem, 3rem);
+  font-weight: 600;
+}
+h3 {
+  font-weight: 300;
+}
+h2,
+h3 {
+  text-transform: capitalize;
+  font-family: var(--font-heading);
+}
+P {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+nav {
+  background-color: var(--clr-secondary);
+}
+header {
+  background-color: var(--clr-secondary);
+  padding: 5em;
+}
+.company-header h2 {
+  text-transform: capitalize;
+  color: #fff;
+  margin-left: -1.5em;
+  line-height: 1.5;
+  font-size: 2rem;
+  font-family: var(--font-heading);
+}
+.blu-link {
+  width: 40%;
+  margin: 2em;
+}
+.solution-data {
+  margin: 2em;
+}
+.solution__data {
+  margin-top: 1em;
+}
+.solution__data h2 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--clr-gray-800);
+}
+.solution__data p {
+  margin-top: 2em;
+  font-family: var(--font-paragraph);
+  font-size: clamp(1.125rem, 0.2vw + 1.1rem, 1.25rem);
+}
+.mission-vision--data {
+  margin: 3em;
+}
+.mission-vision--flex {
+  margin-bottom: 5em;
+}
+.mission-vision--flex p {
+  margin: 1em;
+  margin-left: 0;
+}
+.mission-vision--flex ul {
+  line-height: 1.5;
+  list-style-type: none;
+  margin-top: 1em;
+}
+.company-img-flex {
+  display: flex;
+}
+.first-img-flex {
+  width: 50%;
+}
+.second-img-flex {
+  width: 60%;
+  margin-left: 2em;
+  margin-bottom: 2em;
+  margin-top: -2em;
+}
+.company-team {
+  margin: 2em;
+  margin-top: 5em;
+  text-align: center;
+}
+.company-team h2 {
+  font-size: clamp(1.5rem, 2.4vw + 0.9rem, 3rem);
+}
+.team--desktop {
+  margin: 2em;
+}
+.team_img {
+  width: 40%;
+}
+.team_img_one {
+  width: 60%;
+}
+.team_img_two {
+  width: 50%;
+}
+.images__wrapper img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+.images__wrapper h2,
+.images__wrapper h3 {
+  text-align: center;
+}
+.images__wrapper .bakare {
+  display: block;
+  width: 80%;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-convo {
+  margin: 2em;
+}
+.section__convo {
+  background-color: var(--clr-gray-300);
+  padding: 5em;
+  text-align: center;
+}
+.section__convo h1 {
+  line-height: 1.5;
+  font-size: clamp(1.5rem, 2.4vw + 0.9rem, 3rem);
+  font-family: var(--font-heading);
+  margin-bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btn-convo {
+  padding: 0.8rem 2.5rem;
+  text-decoration: none;
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+  font-family: var(--font-button);
+  font-weight: 600;
+  font-size: clamp(0.9rem, 0.4vw + 0.8rem, 1.13rem);
+  border: none;
+  border-radius: 8px;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: 0.3s;
+}
+footer {
+  background-color: var(--clr-gray-900);
+  margin-bottom: 0;
+}
+.footer-section {
+  color: #fff;
+  text-align: center;
+}
+.footer-data {
+  margin: 2em;
+  text-align: center;
+}
+.footer-data svg {
+  margin-top: 5em;
+}
+.footer-data p {
+  margin-top: 3em;
+  font-weight: 400;
+}
+.social-link li {
+  list-style-type: none;
+}
+.social-link li a {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.social-link li {
+  display: inline-block;
+  margin: 1em;
+  margin-top: 3em;
+}
+.footer-data--two h3 {
+  font-weight: 600;
+}
+.company-link li {
+  list-style-type: none;
+  text-align: center;
+  margin: 2em;
+}
+
+.company-link li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.copyright {
+  margin-top: 3em;
+  color: #fff;
+  text-align: center;
+  padding: 2em;
+}
+
+@media only screen and (min-width: 700px) {
+  .blu-link {
+    width: 15%;
+    margin-left: 6.5em;
+    margin-top: 0;
+  }
+  .company-header {
+    padding: 2rem;
+  }
+  .company-header h2 {
+    font-size: clamp(2rem, 3.2vw + 1.2rem, 4rem);
+    padding-left: 5rem;
+    margin-bottom: 3rem;
+  }
+  .solution-data {
+    margin: 5em;
+  }
+  .solution-data h3 {
+    font-weight: 500;
+  }
+  .solution__data h2 {
+    font-size: clamp(1.5rem, 3.2vw + 0.7rem, 3.5rem);
+    width: 50%;
+    line-height: 1.5;
+  }
+  .solution__data p {
+    width: 75%;
+  }
+  .mission-vision--data {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5em;
+  }
+  .mission-vision--flex {
+    width: 35%;
+  }
+  .mission-vision--flex h4 {
+    font-size: clamp(1.25rem, 1.2vw + 0.9rem, 2rem);
+    font-weight: 800;
+  }
+  .mission-vision--flex p,
+  .mission-vision--flex ul {
+    font-size: clamp(1rem, 0.2vw + 0.9rem, 1.13rem);
+  }
+  .company-img-flex {
+    margin: 5em;
+  }
+  .team--desktop {
+    text-align: center;
+  }
+  .team--desktop p {
+    width: 60%;
+    font-size: clamp(1.125rem, 0.2vw + 1.1rem, 1.25rem);
+    margin: 0 auto;
+  }
+  .images_wrapper-two {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    align-items: center;
+    margin-left: 15em;
+  }
+  .images__wrapper {
+    width: 50%;
+  }
+  .images__wrapper h2 {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .team_img {
+    width: 80%;
+  }
+  .team_img_one {
+    width: 90%;
+  }
+  .team_img_two {
+    width: 80%;
+  }
+  .section-convo {
+    margin: 5em;
+  }
+
+  .section__convo h1 {
+    width: 75%;
+  }
+  .footer-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-data {
+    margin-top: 5em;
+    width: 40%;
+    margin-left: 5em;
+  }
+
+  .footer-data--two h3 {
+    margin-left: 3em;
+  }
+  .footer-data svg {
+    margin-top: 0;
+    display: flex;
+  }
+  .footer-data p {
+    text-align: initial;
+  }
+  .social-link {
+    display: flex;
+  }
+  .company-link li {
+    width: 100%;
+    text-align: center;
+  }
+  .footer__data {
+    display: flex;
+    width: 60%;
+    margin-top: 5em;
+  }
+  .copyright {
+    text-align: center;
+    color: #fff;
+    padding: 3em;
+  }
+}

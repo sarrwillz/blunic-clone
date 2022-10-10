@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap");
+:root {
+  --clr-gray-900: #17191c;
+  --clr-gray-800: #14132a;
+  --clr-gray-700: #4f4b68;
+  --clr-gray-600: #6e7191;
+  --clr-gray-500: #a2a5be;
+  --clr-gray-400: #d8dae8;
+  --clr-gray-300: #eeeff6;
+  --clr-gray-200: #f8f8fc;
+  --clr-article-bg: rgba(0, 29, 245, 0.03);
+  --clr-off-white: #fcfcfc;
+  --clr-white: #fff;
+  --clr-primary: #001df5;
+  --clr-secondary: #1e2662;
+  --clr-error: #ed2c7c;
+  --clr-success: #00b887;
+  --font-size: 100%;
+  --font-heading: "Lato", sans-serif;
+  --font-paragraph: "Nunito", sans-serif;
+  --font-button: "Poppins", sans-serif;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-paragraph);
+}
+h1 {
+  text-transform: capitalize;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+P {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+nav {
+  background-color: var(--clr-secondary);
+}
+header {
+  background-color: var(--clr-secondary);
+  padding: 5em;
+}
+.blu-link {
+  width: 40%;
+  margin: 2em;
+}
+header h2 {
+  color: #fff;
+  margin-left: -1.5em;
+  line-height: 1.5;
+  font-size: 2rem;
+  font-family: var(--font-heading);
+}
+.first-service-data {
+  margin: 2em;
+  margin-top: 5em;
+}
+.first__service__data h2 {
+  margin-bottom: 1.5em;
+  text-transform: capitalize;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-family: 600;
+}
+.service--img {
+  margin-top: 2em;
+  width: 90%;
+}
+.data__prv {
+  margin: 3em;
+}
+
+.flex-article {
+  margin: 2em;
+}
+
+.flex-article .grid__article {
+  background-color: var(--clr-article-bg);
+  margin: 2em;
+}
+
+.flex__article {
+  padding: 3em;
+}
+
+.flex__article h1 {
+  font-weight: 600;
+}
+.flex__article img {
+  width: 20%;
+  border-radius: 50%;
+  background-color: var(--clr-gray-300);
+}
+footer {
+  background-color: var(--clr-gray-900);
+  margin-bottom: 0;
+}
+.footer-section {
+  color: #fff;
+  text-align: center;
+}
+.footer-data {
+  margin: 2em;
+  text-align: center;
+}
+.footer-data svg {
+  margin-top: 5em;
+}
+.footer-data p {
+  margin-top: 3em;
+  font-weight: 400;
+}
+.social-link li {
+  list-style-type: none;
+}
+.social-link li a {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.social-link li {
+  display: inline-block;
+  margin: 1em;
+  margin-top: 3em;
+}
+.footer-data--two h3 {
+  font-weight: 600;
+}
+.company-link li {
+  list-style-type: none;
+  text-align: center;
+  margin: 2em;
+}
+
+.company-link li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.copyright {
+  margin-top: 3em;
+  color: #fff;
+  text-align: center;
+  padding: 2em;
+}
+@media only screen and (min-width: 700px) {
+  .blu-link {
+    width: 15%;
+    margin-left: 6.5em;
+    margin-top: 0;
+  }
+  header {
+    padding: 7rem;
+  }
+  header h2 {
+    font-size: clamp(2rem, 3.2vw + 1.2rem, 4rem);
+    padding-left: 5rem;
+    margin-bottom: 3rem;
+    width: 90%;
+  }
+  .first__service__data {
+    text-align: center;
+  }
+  .first__service__data h2 {
+    text-transform: capitalize;
+    font-size: clamp(1.5rem, 2.4vw + 0.9rem, 3rem);
+    color: var(--clr-gray-800);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    line-height: 57px;
+    margin-bottom: 3rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .first__service__data p {
+    color: var(--clr-gray-600);
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    line-height: 2;
+    font-size: 1.1rem;
+  }
+  .service--img {
+    margin: 3em;
+    margin-top: 7em;
+  }
+  .data__prv {
+    margin: 5em;
+  }
+  .flex__article img {
+    width: 15%;
+  }
+
+  .flex-article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5em;
+  }
+  .flex__article h1 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  .flex__article p {
+    line-height: 1.7;
+    font-size: 1rem;
+  }
+  .flex-article .grid__article {
+    width: 43%;
+  }
+  .footer-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-data {
+    margin-top: 5em;
+    width: 40%;
+    margin-left: 5em;
+  }
+
+  .footer-data--two h3 {
+    margin-left: 3em;
+  }
+  .footer-data svg {
+    margin-top: 0;
+    display: flex;
+  }
+  .footer-data p {
+    text-align: initial;
+  }
+  .social-link {
+    display: flex;
+  }
+  .company-link li {
+    width: 100%;
+    text-align: center;
+  }
+  .footer__data {
+    display: flex;
+    width: 60%;
+    margin-top: 5em;
+  }
+  .copyright {
+    text-align: center;
+    color: #fff;
+    padding: 3em;
+  }
+}

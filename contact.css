@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap");
+:root {
+  --clr-gray-900: #17191c;
+  --clr-gray-800: #14132a;
+  --clr-gray-700: #4f4b68;
+  --clr-gray-600: #6e7191;
+  --clr-gray-500: #a2a5be;
+  --clr-gray-400: #d8dae8;
+  --clr-gray-300: #eeeff6;
+  --clr-gray-200: #f8f8fc;
+  --clr-article-bg: rgba(0, 29, 245, 0.03);
+  --clr-off-white: #fcfcfc;
+  --clr-white: #fff;
+  --clr-primary: #001df5;
+  --clr-secondary: #1e2662;
+  --clr-error: #ed2c7c;
+  --clr-success: #00b887;
+  --font-size: 100%;
+  --font-heading: "Lato", sans-serif;
+  --font-paragraph: "Nunito", sans-serif;
+  --font-button: "Poppins", sans-serif;
+}
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-paragraph);
+}
+h1 {
+  text-transform: capitalize;
+}
+h2 {
+  font-family: var(--font-heading);
+}
+nav {
+  background-color: var(--clr-secondary);
+}
+.blu-link {
+  width: 40%;
+  margin: 2em;
+}
+header {
+  background-color: var(--clr-secondary);
+  padding: 5em;
+}
+header h2 {
+  color: #fff;
+  margin-left: -1.5em;
+  line-height: 1.5;
+  font-size: 2rem;
+  font-family: var(--font-heading);
+}
+.contact--body {
+  margin: 2em;
+}
+.contact__body h2 {
+  font-weight: 600;
+  margin-bottom: 1em;
+  font-size: 1.5rem;
+}
+.main--contact {
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+}
+.main__contact {
+  width: 50%;
+}
+.main__contact h2 {
+  font-size: 1rem;
+}
+.main__contact p {
+  width: 60%;
+  margin-top: 1em;
+}
+.connection {
+  margin-top: 2em;
+}
+.pry-social-link li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0.2em;
+  margin-top: 1em;
+  font-size: 1.5rem;
+}
+.pry-social-link li a {
+  color: var(--clr-secondary);
+}
+footer {
+  background-color: var(--clr-gray-900);
+  margin-bottom: 0;
+}
+.footer-section {
+  color: #fff;
+  text-align: center;
+}
+.footer-data {
+  margin: 2em;
+  text-align: center;
+}
+.footer-data svg {
+  margin-top: 5em;
+}
+.footer-data p {
+  margin-top: 3em;
+  font-weight: 400;
+}
+.social-link li {
+  list-style-type: none;
+}
+.social-link li a {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.social-link li {
+  display: inline-block;
+  margin: 1em;
+  margin-top: 3em;
+}
+.footer-data--two h3 {
+  font-weight: 600;
+}
+.company-link li {
+  list-style-type: none;
+  text-align: center;
+  margin: 2em;
+}
+
+.company-link li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.copyright {
+  margin-top: 3em;
+  color: #fff;
+  text-align: center;
+  padding: 2em;
+}
+@media only screen and (min-width: 700px) {
+  .blu-link {
+    width: 15%;
+    margin-left: 6.5em;
+    margin-top: 0;
+  }
+  header {
+    padding: 7rem;
+  }
+  header h2 {
+    font-size: clamp(2rem, 3.2vw + 1.2rem, 3.8rem);
+    padding-left: 5rem;
+    margin-bottom: 3rem;
+    width: 90%;
+  }
+  .contact__body {
+    margin: 5em;
+    margin-top: 5em;
+  }
+  .contact__body h2 {
+    text-transform: capitalize;
+    font-size: clamp(1.5rem, 2.4vw + 0.9rem, 3rem);
+    color: var(--clr-gray-800);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    line-height: 57px;
+    margin-top: 5rem;
+    width: 50%;
+  }
+  .contact__body p {
+    width: 55%;
+  }
+  .first__service__data p {
+    color: var(--clr-gray-600);
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    line-height: 2;
+    font-size: 1.1rem;
+  }
+  .main--contact {
+    flex-wrap: nowrap;
+    margin: 5em;
+  }
+  .main__contact {
+    width: 100%;
+  }
+  .connection {
+    margin-top: 0;
+  }
+  .footer-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-data {
+    margin-top: 5em;
+    width: 40%;
+    margin-left: 5em;
+  }
+
+  .footer-data--two h3 {
+    margin-left: 3em;
+  }
+  .footer-data svg {
+    margin-top: 0;
+    display: flex;
+  }
+  .footer-data p {
+    text-align: initial;
+  }
+  .social-link {
+    display: flex;
+  }
+  .company-link li {
+    width: 100%;
+    text-align: center;
+  }
+  .footer__data {
+    display: flex;
+    width: 60%;
+    margin-top: 5em;
+  }
+  .copyright {
+    text-align: center;
+    color: #fff;
+    padding: 3em;
+  }
+}
